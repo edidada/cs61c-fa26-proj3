@@ -20,3 +20,10 @@ import re
 text=Path('evidence/imm-gen.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('6','6')],text
 PY
+timeout 300 bash test.sh test_alu 2>&1 | tee evidence/alu.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/alu.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('6','6')],text
+PY
