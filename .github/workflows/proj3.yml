@@ -1,0 +1,23 @@
+name: CS61C Project3
+on:
+  push:
+    branches: [edidada/proj3]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  logisim:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: bash scripts/verify_proj3.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proj3-evidence
+          path: evidence/
