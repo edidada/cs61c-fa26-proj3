@@ -34,3 +34,17 @@ import re
 text=Path('evidence/regfile.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('4','4')],text
 PY
+timeout 300 bash test.sh test_partial_load 2>&1 | tee evidence/partial_load.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/partial_load.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('3','3')],text
+PY
+timeout 300 bash test.sh test_partial_store 2>&1 | tee evidence/partial_store.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/partial_store.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('4','4')],text
+PY
