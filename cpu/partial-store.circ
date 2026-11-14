@@ -977,7 +977,7 @@
     </comp>
     <wire from="(2130,1410)" to="(2160,1410)" />
     <comp lib="0" name="Tunnel" loc="(2240,1400)">
-      <a name="label" val="DataToMem" />
+      <a name="label" val="store_shifted" />
       <a name="width" val="32" />
     </comp>
     <wire from="(2200,1400)" to="(2240,1400)" />
@@ -1116,5 +1116,30 @@
       <a name="width" val="4" />
     </comp>
     <wire from="(2800,1900)" to="(2840,1900)" />
+    <comp lib="2" name="Multiplexer" loc="(2800,1400)">
+      <a name="select" val="1" />
+      <a name="width" val="32" />
+      <a name="enable" val="false" />
+    </comp>
+    <comp lib="0" name="Tunnel" loc="(2730,1390)">
+      <a name="label" val="zero" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(2730,1390)" to="(2770,1390)" />
+    <comp lib="0" name="Tunnel" loc="(2730,1410)">
+      <a name="label" val="store_shifted" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(2730,1410)" to="(2770,1410)" />
+    <comp lib="0" name="Tunnel" loc="(2780,1470)">
+      <a name="label" val="MemRW" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(2780,1420)" to="(2780,1470)" />
+    <comp lib="0" name="Tunnel" loc="(2840,1400)">
+      <a name="label" val="DataToMem" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(2800,1400)" to="(2840,1400)" />
   </circuit>
 </project>
