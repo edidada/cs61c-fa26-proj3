@@ -55,3 +55,13 @@ import re
 text=Path('evidence/integration.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('15','15')],text
 PY
+curl -fL --retry 3 --max-time 180 https://inst.eecs.berkeley.edu/~cs61c/fa24/tools/venus-latest.jar -o tools/venus.jar
+sha256sum tools/venus.jar | tee evidence/venus.sha256
+timeout 180 bash test.sh create_custom 2>&1 | tee evidence/create-custom.log
+timeout 300 bash test.sh run_custom 2>&1 | tee evidence/custom.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/custom.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('1','1')],text
+PY
