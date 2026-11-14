@@ -219,11 +219,11 @@
       <a name="width" val="1" />
     </comp>
     <wire from="(750,510)" to="(770,510)" />
-    <comp lib="0" name="Tunnel" loc="(790,550)">
+    <comp lib="0" name="Tunnel" loc="(780,550)">
       <a name="label" val="BrUn" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(790,520)" to="(790,550)" />
+    <wire from="(780,520)" to="(780,550)" />
     <comp lib="0" name="Tunnel" loc="(830,500)">
       <a name="label" val="BrLt" />
       <a name="width" val="1" />
