@@ -1,86 +1,86 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version='1.0' encoding='utf-8'?>
 <project source="3.8.0-61c.b5e883a" version="1.0">
   This file is intended to be loaded by Logisim-evolution v3.8.0-61c.b5e883a(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="appear" val="center"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+      <a name="appear" val="center" />
+      <a name="fanout" val="4" />
+      <a name="incoming" val="4" />
     </tool>
     <tool name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="north" />
     </tool>
     <tool name="Probe">
-      <a name="appearance" val="classic"/>
-      <a name="radix" val="16"/>
+      <a name="appearance" val="classic" />
+      <a name="radix" val="16" />
     </tool>
     <tool name="Tunnel">
-      <a name="width" val="2"/>
+      <a name="width" val="2" />
     </tool>
     <tool name="Pull Resistor">
-      <a name="facing" val="north"/>
+      <a name="facing" val="north" />
     </tool>
     <tool name="Clock">
-      <a name="facing" val="north"/>
+      <a name="facing" val="north" />
     </tool>
     <tool name="Constant">
-      <a name="value" val="0xff"/>
-      <a name="width" val="8"/>
+      <a name="value" val="0xff" />
+      <a name="width" val="8" />
     </tool>
   </lib>
-  <lib desc="#Gates" name="1"/>
-  <lib desc="#Plexers" name="2"/>
-  <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Gates" name="1" />
+  <lib desc="#Plexers" name="2" />
+  <lib desc="#Arithmetic" name="3" />
+  <lib desc="#Memory" name="4" />
   <lib desc="#Base" name="5">
     <tool name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
+      <a name="font" val="SansSerif plain 12" />
     </tool>
   </lib>
-  <main name="control_logic"/>
+  <main name="control_logic" />
   <options>
-    <a name="gateUndefined" val="ignore"/>
-    <a name="simlimit" val="1000"/>
-    <a name="simrand" val="0"/>
+    <a name="gateUndefined" val="ignore" />
+    <a name="simlimit" val="1000" />
+    <a name="simrand" val="0" />
   </options>
   <mappings>
-    <tool lib="5" map="Button2" name="Menu Tool"/>
-    <tool lib="5" map="Button3" name="Menu Tool"/>
-    <tool lib="5" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="5" map="Button2" name="Menu Tool" />
+    <tool lib="5" map="Button3" name="Menu Tool" />
+    <tool lib="5" map="Ctrl Button1" name="Menu Tool" />
   </mappings>
   <toolbar>
-    <tool lib="5" name="Poke Tool"/>
-    <tool lib="5" name="Edit Tool"/>
-    <tool lib="5" name="Wiring Tool"/>
+    <tool lib="5" name="Poke Tool" />
+    <tool lib="5" name="Edit Tool" />
+    <tool lib="5" name="Wiring Tool" />
     <tool lib="5" name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
+      <a name="font" val="SansSerif plain 12" />
     </tool>
-    <sep/>
-    <tool lib="0" name="Pin"/>
+    <sep />
+    <tool lib="0" name="Pin" />
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="facing" val="west" />
+      <a name="output" val="true" />
     </tool>
-    <sep/>
-    <tool lib="1" name="NOT Gate"/>
-    <tool lib="1" name="AND Gate"/>
-    <tool lib="1" name="OR Gate"/>
-    <tool lib="1" name="XOR Gate"/>
-    <tool lib="1" name="NAND Gate"/>
-    <tool lib="1" name="NOR Gate"/>
-    <sep/>
-    <tool lib="4" name="D Flip-Flop"/>
-    <tool lib="4" name="Register"/>
+    <sep />
+    <tool lib="1" name="NOT Gate" />
+    <tool lib="1" name="AND Gate" />
+    <tool lib="1" name="OR Gate" />
+    <tool lib="1" name="XOR Gate" />
+    <tool lib="1" name="NAND Gate" />
+    <tool lib="1" name="NOR Gate" />
+    <sep />
+    <tool lib="4" name="D Flip-Flop" />
+    <tool lib="4" name="Register" />
   </toolbar>
   <circuit name="control_logic">
-    <a name="appearance" val="custom"/>
-    <a name="circuit" val="control_logic"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="appearance" val="custom" />
+    <a name="circuit" val="control_logic" />
+    <a name="circuitnamedboxfixedsize" val="true" />
+    <a name="simulationFrequency" val="1.0" />
     <appear>
-      <rect fill="none" height="60" rx="10" ry="10" stroke="#000000" stroke-width="2" width="700" x="80" y="230"/>
+      <rect fill="none" height="60" rx="10" ry="10" stroke="#000000" stroke-width="2" width="700" x="80" y="230" />
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="140" y="250">Instruction</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="220" y="250">PCSel</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="270" y="250">RegWEn</text>
@@ -93,307 +93,1592 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="620" y="250">ALUSel</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="670" y="250">MemRW</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="720" y="250">WBSel</text>
-      <circ-anchor facing="east" height="6" width="6" x="217" y="227"/>
-      <circ-port height="10" pin="350,210" width="10" x="215" y="225"/>
-      <circ-port height="10" pin="420,210" width="10" x="265" y="225"/>
-      <circ-port height="10" pin="500,210" width="10" x="315" y="225"/>
-      <circ-port height="10" pin="570,210" width="10" x="465" y="225"/>
-      <circ-port height="10" pin="620,210" width="10" x="515" y="225"/>
-      <circ-port height="10" pin="670,210" width="10" x="565" y="225"/>
-      <circ-port height="10" pin="730,210" width="10" x="615" y="225"/>
-      <circ-port height="10" pin="810,210" width="10" x="665" y="225"/>
-      <circ-port height="10" pin="880,210" width="10" x="715" y="225"/>
-      <circ-port height="8" pin="120,210" width="8" x="136" y="226"/>
-      <circ-port height="8" pin="200,210" width="8" x="366" y="226"/>
-      <circ-port height="8" pin="250,210" width="8" x="416" y="226"/>
+      <circ-anchor facing="east" height="6" width="6" x="217" y="227" />
+      <circ-port height="10" pin="350,210" width="10" x="215" y="225" />
+      <circ-port height="10" pin="420,210" width="10" x="265" y="225" />
+      <circ-port height="10" pin="500,210" width="10" x="315" y="225" />
+      <circ-port height="10" pin="570,210" width="10" x="465" y="225" />
+      <circ-port height="10" pin="620,210" width="10" x="515" y="225" />
+      <circ-port height="10" pin="670,210" width="10" x="565" y="225" />
+      <circ-port height="10" pin="730,210" width="10" x="615" y="225" />
+      <circ-port height="10" pin="810,210" width="10" x="665" y="225" />
+      <circ-port height="10" pin="880,210" width="10" x="715" y="225" />
+      <circ-port height="8" pin="120,210" width="8" x="136" y="226" />
+      <circ-port height="8" pin="200,210" width="8" x="366" y="226" />
+      <circ-port height="8" pin="250,210" width="8" x="416" y="226" />
     </appear>
     <comp lib="0" loc="(120,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="Instruction"/>
-      <a name="locked" val="true"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(120,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="Instruction"/>
-      <a name="width" val="32"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="Instruction" />
+      <a name="locked" val="true" />
+      <a name="width" val="32" />
     </comp>
     <comp lib="0" loc="(200,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="BrEq"/>
-      <a name="locked" val="true"/>
-    </comp>
-    <comp lib="0" loc="(200,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="BrEq"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="BrEq" />
+      <a name="locked" val="true" />
     </comp>
     <comp lib="0" loc="(250,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="BrLt"/>
-      <a name="locked" val="true"/>
-    </comp>
-    <comp lib="0" loc="(250,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="BrLt"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="BrLt" />
+      <a name="locked" val="true" />
     </comp>
     <comp lib="0" loc="(350,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="PCSel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(350,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="PCSel"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="PCSel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(420,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="RegWEn"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(420,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="RegWEn"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="RegWEn" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(500,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="ImmSel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-      <a name="width" val="3"/>
-    </comp>
-    <comp lib="0" loc="(500,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="ImmSel"/>
-      <a name="width" val="3"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="ImmSel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
+      <a name="width" val="3" />
     </comp>
     <comp lib="0" loc="(570,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="BrUn"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(570,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="BrUn"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="BrUn" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(620,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="ASel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(620,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="ASel"/>
-    </comp>
-    <comp lib="0" loc="(660,620)" name="Splitter">
-      <a name="appear" val="center"/>
-      <a name="bit10" val="5"/>
-      <a name="bit11" val="6"/>
-      <a name="bit12" val="7"/>
-      <a name="bit13" val="7"/>
-      <a name="bit14" val="none"/>
-      <a name="bit15" val="none"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="1"/>
-      <a name="bit4" val="2"/>
-      <a name="bit5" val="3"/>
-      <a name="bit6" val="4"/>
-      <a name="bit7" val="5"/>
-      <a name="bit8" val="5"/>
-      <a name="bit9" val="5"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="16"/>
-      <a name="spacing" val="3"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="ASel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(670,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="BSel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(670,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="BSel"/>
-    </comp>
-    <comp lib="0" loc="(700,500)" name="Tunnel">
-      <a name="label" val="RegWEn"/>
-    </comp>
-    <comp lib="0" loc="(700,530)" name="Tunnel">
-      <a name="label" val="ImmSel"/>
-      <a name="width" val="3"/>
-    </comp>
-    <comp lib="0" loc="(700,560)" name="Tunnel">
-      <a name="label" val="BrUn"/>
-    </comp>
-    <comp lib="0" loc="(700,590)" name="Tunnel">
-      <a name="label" val="ASel"/>
-    </comp>
-    <comp lib="0" loc="(700,620)" name="Tunnel">
-      <a name="label" val="BSel"/>
-    </comp>
-    <comp lib="0" loc="(700,650)" name="Tunnel">
-      <a name="label" val="ALUSel"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(700,680)" name="Tunnel">
-      <a name="label" val="MemRW"/>
-    </comp>
-    <comp lib="0" loc="(700,710)" name="Tunnel">
-      <a name="label" val="WBSel"/>
-      <a name="width" val="2"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="BSel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(730,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="ALUSel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(730,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="ALUSel"/>
-      <a name="width" val="4"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="ALUSel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
+      <a name="width" val="4" />
     </comp>
     <comp lib="0" loc="(810,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="MemRW"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(810,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="MemRW"/>
-    </comp>
-    <comp lib="0" loc="(860,420)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="PCSel"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="MemRW" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
     </comp>
     <comp lib="0" loc="(880,210)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="WBSel"/>
-      <a name="locked" val="true"/>
-      <a name="output" val="true"/>
-      <a name="width" val="2"/>
+      <a name="appearance" val="classic" />
+      <a name="facing" val="south" />
+      <a name="label" val="WBSel" />
+      <a name="locked" val="true" />
+      <a name="output" val="true" />
+      <a name="width" val="2" />
     </comp>
-    <comp lib="0" loc="(880,230)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="WBSel"/>
-      <a name="width" val="2"/>
+    <comp name="Tunnel" loc="(140,210)" lib="0">
+      <a name="label" val="Instruction" />
+      <a name="width" val="32" />
     </comp>
-    <comp lib="4" loc="(350,420)" name="ROM">
-      <a name="addrWidth" val="6"/>
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 6 16
-0
+    <wire from="(120,210)" to="(140,210)" />
+    <comp name="Tunnel" loc="(220,210)" lib="0">
+      <a name="label" val="BrEq" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(200,210)" to="(220,210)" />
+    <comp name="Tunnel" loc="(270,210)" lib="0">
+      <a name="label" val="BrLt" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(250,210)" to="(270,210)" />
+    <comp name="Tunnel" loc="(370,210)" lib="0">
+      <a name="label" val="PCSel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(350,210)" to="(370,210)" />
+    <comp name="Tunnel" loc="(440,210)" lib="0">
+      <a name="label" val="RegWEn" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,210)" to="(440,210)" />
+    <comp name="Tunnel" loc="(520,210)" lib="0">
+      <a name="label" val="ImmSel" />
+      <a name="width" val="3" />
+    </comp>
+    <wire from="(500,210)" to="(520,210)" />
+    <comp name="Tunnel" loc="(590,210)" lib="0">
+      <a name="label" val="BrUn" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(570,210)" to="(590,210)" />
+    <comp name="Tunnel" loc="(640,210)" lib="0">
+      <a name="label" val="ASel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(620,210)" to="(640,210)" />
+    <comp name="Tunnel" loc="(690,210)" lib="0">
+      <a name="label" val="BSel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(670,210)" to="(690,210)" />
+    <comp name="Tunnel" loc="(750,210)" lib="0">
+      <a name="label" val="ALUSel" />
+      <a name="width" val="4" />
+    </comp>
+    <wire from="(730,210)" to="(750,210)" />
+    <comp name="Tunnel" loc="(830,210)" lib="0">
+      <a name="label" val="MemRW" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(810,210)" to="(830,210)" />
+    <comp name="Tunnel" loc="(900,210)" lib="0">
+      <a name="label" val="WBSel" />
+      <a name="width" val="2" />
+    </comp>
+    <wire from="(880,210)" to="(900,210)" />
+    <comp name="Splitter" loc="(400,1100)" lib="0">
+      <a name="facing" val="east" />
+      <a name="appear" val="center" />
+      <a name="fanout" val="32" />
+      <a name="incoming" val="32" />
+      <a name="spacing" val="2" />
+      <a name="bit0" val="0" />
+      <a name="bit1" val="1" />
+      <a name="bit2" val="2" />
+      <a name="bit3" val="3" />
+      <a name="bit4" val="4" />
+      <a name="bit5" val="5" />
+      <a name="bit6" val="6" />
+      <a name="bit7" val="7" />
+      <a name="bit8" val="8" />
+      <a name="bit9" val="9" />
+      <a name="bit10" val="10" />
+      <a name="bit11" val="11" />
+      <a name="bit12" val="12" />
+      <a name="bit13" val="13" />
+      <a name="bit14" val="14" />
+      <a name="bit15" val="15" />
+      <a name="bit16" val="16" />
+      <a name="bit17" val="17" />
+      <a name="bit18" val="18" />
+      <a name="bit19" val="19" />
+      <a name="bit20" val="20" />
+      <a name="bit21" val="21" />
+      <a name="bit22" val="22" />
+      <a name="bit23" val="23" />
+      <a name="bit24" val="24" />
+      <a name="bit25" val="25" />
+      <a name="bit26" val="26" />
+      <a name="bit27" val="27" />
+      <a name="bit28" val="28" />
+      <a name="bit29" val="29" />
+      <a name="bit30" val="30" />
+      <a name="bit31" val="31" />
+    </comp>
+    <comp name="Tunnel" loc="(370,1100)" lib="0">
+      <a name="label" val="Instruction" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(370,1100)" to="(400,1100)" />
+    <comp name="Tunnel" loc="(450,780)" lib="0">
+      <a name="label" val="i0" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,780)" to="(450,780)" />
+    <comp name="Tunnel" loc="(450,800)" lib="0">
+      <a name="label" val="i1" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,800)" to="(450,800)" />
+    <comp name="Tunnel" loc="(450,820)" lib="0">
+      <a name="label" val="i2" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,820)" to="(450,820)" />
+    <comp name="Tunnel" loc="(450,840)" lib="0">
+      <a name="label" val="i3" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,840)" to="(450,840)" />
+    <comp name="Tunnel" loc="(450,860)" lib="0">
+      <a name="label" val="i4" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,860)" to="(450,860)" />
+    <comp name="Tunnel" loc="(450,880)" lib="0">
+      <a name="label" val="i5" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,880)" to="(450,880)" />
+    <comp name="Tunnel" loc="(450,900)" lib="0">
+      <a name="label" val="i6" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,900)" to="(450,900)" />
+    <comp name="Tunnel" loc="(450,920)" lib="0">
+      <a name="label" val="i7" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,920)" to="(450,920)" />
+    <comp name="Tunnel" loc="(450,940)" lib="0">
+      <a name="label" val="i8" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,940)" to="(450,940)" />
+    <comp name="Tunnel" loc="(450,960)" lib="0">
+      <a name="label" val="i9" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,960)" to="(450,960)" />
+    <comp name="Tunnel" loc="(450,980)" lib="0">
+      <a name="label" val="i10" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,980)" to="(450,980)" />
+    <comp name="Tunnel" loc="(450,1000)" lib="0">
+      <a name="label" val="i11" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1000)" to="(450,1000)" />
+    <comp name="Tunnel" loc="(450,1020)" lib="0">
+      <a name="label" val="i12" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1020)" to="(450,1020)" />
+    <comp name="Tunnel" loc="(450,1040)" lib="0">
+      <a name="label" val="i13" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1040)" to="(450,1040)" />
+    <comp name="Tunnel" loc="(450,1060)" lib="0">
+      <a name="label" val="i14" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1060)" to="(450,1060)" />
+    <comp name="Tunnel" loc="(450,1080)" lib="0">
+      <a name="label" val="i15" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1080)" to="(450,1080)" />
+    <comp name="Tunnel" loc="(450,1100)" lib="0">
+      <a name="label" val="i16" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1100)" to="(450,1100)" />
+    <comp name="Tunnel" loc="(450,1120)" lib="0">
+      <a name="label" val="i17" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1120)" to="(450,1120)" />
+    <comp name="Tunnel" loc="(450,1140)" lib="0">
+      <a name="label" val="i18" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1140)" to="(450,1140)" />
+    <comp name="Tunnel" loc="(450,1160)" lib="0">
+      <a name="label" val="i19" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1160)" to="(450,1160)" />
+    <comp name="Tunnel" loc="(450,1180)" lib="0">
+      <a name="label" val="i20" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1180)" to="(450,1180)" />
+    <comp name="Tunnel" loc="(450,1200)" lib="0">
+      <a name="label" val="i21" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1200)" to="(450,1200)" />
+    <comp name="Tunnel" loc="(450,1220)" lib="0">
+      <a name="label" val="i22" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1220)" to="(450,1220)" />
+    <comp name="Tunnel" loc="(450,1240)" lib="0">
+      <a name="label" val="i23" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1240)" to="(450,1240)" />
+    <comp name="Tunnel" loc="(450,1260)" lib="0">
+      <a name="label" val="i24" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1260)" to="(450,1260)" />
+    <comp name="Tunnel" loc="(450,1280)" lib="0">
+      <a name="label" val="i25" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1280)" to="(450,1280)" />
+    <comp name="Tunnel" loc="(450,1300)" lib="0">
+      <a name="label" val="i26" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1300)" to="(450,1300)" />
+    <comp name="Tunnel" loc="(450,1320)" lib="0">
+      <a name="label" val="i27" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1320)" to="(450,1320)" />
+    <comp name="Tunnel" loc="(450,1340)" lib="0">
+      <a name="label" val="i28" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1340)" to="(450,1340)" />
+    <comp name="Tunnel" loc="(450,1360)" lib="0">
+      <a name="label" val="i29" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1360)" to="(450,1360)" />
+    <comp name="Tunnel" loc="(450,1380)" lib="0">
+      <a name="label" val="i30" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1380)" to="(450,1380)" />
+    <comp name="Tunnel" loc="(450,1400)" lib="0">
+      <a name="label" val="i31" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(420,1400)" to="(450,1400)" />
+    <comp name="Splitter" loc="(1000,1200)" lib="0">
+      <a name="facing" val="east" />
+      <a name="appear" val="center" />
+      <a name="fanout" val="14" />
+      <a name="incoming" val="14" />
+      <a name="spacing" val="2" />
+      <a name="bit0" val="0" />
+      <a name="bit1" val="1" />
+      <a name="bit2" val="2" />
+      <a name="bit3" val="3" />
+      <a name="bit4" val="4" />
+      <a name="bit5" val="5" />
+      <a name="bit6" val="6" />
+      <a name="bit7" val="7" />
+      <a name="bit8" val="8" />
+      <a name="bit9" val="9" />
+      <a name="bit10" val="10" />
+      <a name="bit11" val="11" />
+      <a name="bit12" val="12" />
+      <a name="bit13" val="13" />
+    </comp>
+    <comp name="Tunnel" loc="(970,1200)" lib="0">
+      <a name="label" val="control_address" />
+      <a name="width" val="14" />
+    </comp>
+    <wire from="(970,1200)" to="(1000,1200)" />
+    <comp name="Tunnel" loc="(1050,1060)" lib="0">
+      <a name="label" val="i0" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1060)" to="(1050,1060)" />
+    <comp name="Tunnel" loc="(1050,1080)" lib="0">
+      <a name="label" val="i1" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1080)" to="(1050,1080)" />
+    <comp name="Tunnel" loc="(1050,1100)" lib="0">
+      <a name="label" val="i2" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1100)" to="(1050,1100)" />
+    <comp name="Tunnel" loc="(1050,1120)" lib="0">
+      <a name="label" val="i3" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1120)" to="(1050,1120)" />
+    <comp name="Tunnel" loc="(1050,1140)" lib="0">
+      <a name="label" val="i4" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1140)" to="(1050,1140)" />
+    <comp name="Tunnel" loc="(1050,1160)" lib="0">
+      <a name="label" val="i5" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1160)" to="(1050,1160)" />
+    <comp name="Tunnel" loc="(1050,1180)" lib="0">
+      <a name="label" val="i6" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1180)" to="(1050,1180)" />
+    <comp name="Tunnel" loc="(1050,1200)" lib="0">
+      <a name="label" val="i12" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1200)" to="(1050,1200)" />
+    <comp name="Tunnel" loc="(1050,1220)" lib="0">
+      <a name="label" val="i13" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1220)" to="(1050,1220)" />
+    <comp name="Tunnel" loc="(1050,1240)" lib="0">
+      <a name="label" val="i14" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1240)" to="(1050,1240)" />
+    <comp name="Tunnel" loc="(1050,1260)" lib="0">
+      <a name="label" val="i30" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1260)" to="(1050,1260)" />
+    <comp name="Tunnel" loc="(1050,1280)" lib="0">
+      <a name="label" val="i25" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1280)" to="(1050,1280)" />
+    <comp name="Tunnel" loc="(1050,1300)" lib="0">
+      <a name="label" val="BrEq" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1300)" to="(1050,1300)" />
+    <comp name="Tunnel" loc="(1050,1320)" lib="0">
+      <a name="label" val="BrLt" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1020,1320)" to="(1050,1320)" />
+    <comp name="ROM" loc="(1500,1000)" lib="4">
+      <a name="addrWidth" val="14" />
+      <a name="dataWidth" val="16" />
+      <a name="appearance" val="logisim_evolution" />
+      <a name="contents">addr/data: 14 16
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 281 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 601 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 681 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 281 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 601 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 681 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 281 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 601 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 681 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 281 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 601 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 81 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 101 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 201 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 681 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 301 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 381 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 41 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 401 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 6041 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 481 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 141 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 842 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 581 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 241 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1041 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 6c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 341 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 4064 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 3c1 0 0 0 67 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 7c7 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 64 0 0 0 0 0 0 0 0 0 0 0 6069
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 </a>
-      <a name="dataWidth" val="16"/>
     </comp>
-    <comp lib="5" loc="(174,93)" name="Text">
-      <a name="text" val="INPUTS to your circuit"/>
+    <comp name="Tunnel" loc="(1470,1010)" lib="0">
+      <a name="label" val="control_address" />
+      <a name="width" val="14" />
     </comp>
-    <comp lib="5" loc="(247,435)" name="Text">
-      <a name="font" val="SansSerif plain 14"/>
-      <a name="text" val="Connect ROM Input here -&gt;"/>
+    <wire from="(1470,1010)" to="(1500,1010)" />
+    <comp name="Tunnel" loc="(1780,1060)" lib="0">
+      <a name="label" val="control_word" />
+      <a name="width" val="16" />
     </comp>
-    <comp lib="5" loc="(472,409)" name="Text">
-      <a name="text" val="ROM FOR CONTROL LOGIC"/>
+    <wire from="(1740,1060)" to="(1780,1060)" />
+    <comp name="Splitter" loc="(2100,1200)" lib="0">
+      <a name="facing" val="east" />
+      <a name="appear" val="center" />
+      <a name="fanout" val="10" />
+      <a name="incoming" val="16" />
+      <a name="spacing" val="2" />
+      <a name="bit0" val="0" />
+      <a name="bit1" val="1" />
+      <a name="bit2" val="1" />
+      <a name="bit3" val="1" />
+      <a name="bit4" val="2" />
+      <a name="bit5" val="3" />
+      <a name="bit6" val="4" />
+      <a name="bit7" val="5" />
+      <a name="bit8" val="5" />
+      <a name="bit9" val="5" />
+      <a name="bit10" val="5" />
+      <a name="bit11" val="6" />
+      <a name="bit12" val="7" />
+      <a name="bit13" val="7" />
+      <a name="bit14" val="8" />
+      <a name="bit15" val="9" />
     </comp>
-    <comp lib="5" loc="(562,43)" name="Text">
-      <a name="text" val="DON'T CHANGE THE LOCATIONS OF THE INPUTS AND OUTPUTS!"/>
+    <comp name="Tunnel" loc="(2070,1200)" lib="0">
+      <a name="label" val="control_word" />
+      <a name="width" val="16" />
     </comp>
-    <comp lib="5" loc="(569,357)" name="Text">
-      <a name="text" val="This is only if you choose to do the ROM option"/>
+    <wire from="(2070,1200)" to="(2100,1200)" />
+    <comp name="Tunnel" loc="(2160,1100)" lib="0">
+      <a name="label" val="RegWEn" />
+      <a name="width" val="1" />
     </comp>
-    <comp lib="5" loc="(620,551)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="TO"/>
+    <wire from="(2120,1100)" to="(2160,1100)" />
+    <comp name="Tunnel" loc="(2160,1120)" lib="0">
+      <a name="label" val="ImmSel" />
+      <a name="width" val="3" />
     </comp>
-    <comp lib="5" loc="(620,571)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="USE"/>
+    <wire from="(2120,1120)" to="(2160,1120)" />
+    <comp name="Tunnel" loc="(2160,1140)" lib="0">
+      <a name="label" val="unused_br" />
+      <a name="width" val="1" />
     </comp>
-    <comp lib="5" loc="(621,510)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="CONNECT"/>
+    <wire from="(2120,1140)" to="(2160,1140)" />
+    <comp name="Tunnel" loc="(2160,1160)" lib="0">
+      <a name="label" val="ASel" />
+      <a name="width" val="1" />
     </comp>
-    <comp lib="5" loc="(621,530)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="WIRE"/>
+    <wire from="(2120,1160)" to="(2160,1160)" />
+    <comp name="Tunnel" loc="(2160,1180)" lib="0">
+      <a name="label" val="BSel" />
+      <a name="width" val="1" />
     </comp>
-    <comp lib="5" loc="(621,590)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="ROM"/>
+    <wire from="(2120,1180)" to="(2160,1180)" />
+    <comp name="Tunnel" loc="(2160,1200)" lib="0">
+      <a name="label" val="ALUSel" />
+      <a name="width" val="4" />
     </comp>
-    <comp lib="5" loc="(673,142)" name="Text">
-      <a name="text" val="OUTPUT from your circuit"/>
+    <wire from="(2120,1200)" to="(2160,1200)" />
+    <comp name="Tunnel" loc="(2160,1220)" lib="0">
+      <a name="label" val="MemRW" />
+      <a name="width" val="1" />
     </comp>
-    <comp lib="5" loc="(989,396)" name="Text">
-      <a name="font" val="SansSerif plain 14"/>
-      <a name="text" val="Reminder: If using ROM, use combinational logic for PCSel"/>
+    <wire from="(2120,1220)" to="(2160,1220)" />
+    <comp name="Tunnel" loc="(2160,1240)" lib="0">
+      <a name="label" val="WBSel" />
+      <a name="width" val="2" />
     </comp>
-    <wire from="(120,210)" to="(120,230)"/>
-    <wire from="(140,230)" to="(180,230)"/>
-    <wire from="(200,210)" to="(200,230)"/>
-    <wire from="(220,230)" to="(230,230)"/>
-    <wire from="(250,210)" to="(250,230)"/>
-    <wire from="(270,230)" to="(280,230)"/>
-    <wire from="(280,100)" to="(280,230)"/>
-    <wire from="(310,150)" to="(310,230)"/>
-    <wire from="(310,150)" to="(920,150)"/>
-    <wire from="(310,230)" to="(330,230)"/>
-    <wire from="(320,370)" to="(320,410)"/>
-    <wire from="(320,370)" to="(800,370)"/>
-    <wire from="(320,450)" to="(320,820)"/>
-    <wire from="(320,820)" to="(800,820)"/>
-    <wire from="(350,210)" to="(350,230)"/>
-    <wire from="(370,230)" to="(400,230)"/>
-    <wire from="(420,210)" to="(420,230)"/>
-    <wire from="(440,230)" to="(480,230)"/>
-    <wire from="(500,210)" to="(500,230)"/>
-    <wire from="(520,230)" to="(550,230)"/>
-    <wire from="(570,210)" to="(570,230)"/>
-    <wire from="(590,230)" to="(600,230)"/>
-    <wire from="(590,480)" to="(620,480)"/>
-    <wire from="(60,100)" to="(280,100)"/>
-    <wire from="(60,100)" to="(60,230)"/>
-    <wire from="(60,230)" to="(100,230)"/>
-    <wire from="(620,210)" to="(620,230)"/>
-    <wire from="(620,480)" to="(620,490)"/>
-    <wire from="(620,600)" to="(620,620)"/>
-    <wire from="(620,620)" to="(660,620)"/>
-    <wire from="(640,230)" to="(650,230)"/>
-    <wire from="(670,210)" to="(670,230)"/>
-    <wire from="(680,500)" to="(700,500)"/>
-    <wire from="(680,530)" to="(700,530)"/>
-    <wire from="(680,560)" to="(700,560)"/>
-    <wire from="(680,590)" to="(700,590)"/>
-    <wire from="(680,620)" to="(700,620)"/>
-    <wire from="(680,650)" to="(700,650)"/>
-    <wire from="(680,680)" to="(700,680)"/>
-    <wire from="(680,710)" to="(700,710)"/>
-    <wire from="(690,230)" to="(710,230)"/>
-    <wire from="(730,210)" to="(730,230)"/>
-    <wire from="(750,230)" to="(790,230)"/>
-    <wire from="(800,370)" to="(800,820)"/>
-    <wire from="(810,210)" to="(810,230)"/>
-    <wire from="(830,230)" to="(860,230)"/>
-    <wire from="(880,210)" to="(880,230)"/>
-    <wire from="(900,230)" to="(920,230)"/>
-    <wire from="(920,150)" to="(920,230)"/>
+    <wire from="(2120,1240)" to="(2160,1240)" />
+    <comp name="Tunnel" loc="(2160,1260)" lib="0">
+      <a name="label" val="PCSel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(2120,1260)" to="(2160,1260)" />
+    <comp name="Tunnel" loc="(2160,1280)" lib="0">
+      <a name="label" val="unused" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(2120,1280)" to="(2160,1280)" />
+    <comp name="Tunnel" loc="(1600,1500)" lib="0">
+      <a name="label" val="i14" />
+      <a name="width" val="1" />
+    </comp>
+    <comp name="Tunnel" loc="(1650,1500)" lib="0">
+      <a name="label" val="BrUn" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(1600,1500)" to="(1650,1500)" />
   </circuit>
 </project>
