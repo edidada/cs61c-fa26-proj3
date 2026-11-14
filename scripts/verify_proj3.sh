@@ -53,7 +53,7 @@ Instruction[32] BrEq BrLt PCSel RegWEn ImmSel[3] BrUn ASel BSel ALUSel[4] MemRW 
 0x00100293 1 0 0 1 0 0 0 1 0 0 0
 VEC
 xvfb-run -a java -jar tools/logisim-evolution.jar -test-vector control_logic evidence/control.vec cpu/control-logic.circ 2>&1 | tee evidence/control-vector.log
-timeout 600 python3 tools/run_test.py tests/integration-*/ 2>&1 | tee evidence/integration.log
+timeout 600 python3 tools/run_test.py --pipelined tests/integration-*/ 2>&1 | tee evidence/integration.log
 python3 - <<'PY'
 from pathlib import Path
 import re
@@ -61,9 +61,10 @@ text=Path('evidence/integration.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('15','15')],text
 PY
 curl -fL --retry 3 --max-time 180 https://inst.eecs.berkeley.edu/~cs61c/fa24/tools/venus-latest.jar -o tools/venus.jar
+echo "69e48a8ffecb155d1227d171ae6888be0d3e103975d04b19762a08fc9463e1cc  tools/venus.jar" | sha256sum --check
 sha256sum tools/venus.jar | tee evidence/venus.sha256
 timeout 180 bash test.sh create_custom 2>&1 | tee evidence/create-custom.log
-timeout 300 bash test.sh run_custom 2>&1 | tee evidence/custom.log
+timeout 300 bash test.sh run_custom --pipelined 2>&1 | tee evidence/custom.log
 python3 - <<'PY'
 from pathlib import Path
 import re

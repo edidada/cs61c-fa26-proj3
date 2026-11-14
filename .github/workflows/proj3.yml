@@ -20,4 +20,7 @@ jobs:
         if: always()
         with:
           name: proj3-evidence
-          path: evidence/
+          path: |
+            evidence/
+            tests/**/out/
+            tests/integration-custom/*.circ
