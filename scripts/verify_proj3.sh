@@ -48,6 +48,11 @@ import re
 text=Path('evidence/partial_store.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('4','4')],text
 PY
+cat > evidence/control.vec <<'VEC'
+Instruction[32] BrEq BrLt PCSel RegWEn ImmSel[3] BrUn ASel BSel ALUSel[4] MemRW WBSel[2]
+0x00100293 1 0 0 1 0 0 0 1 0 0 0
+VEC
+xvfb-run -a java -jar tools/logisim-evolution.jar -test-vector control_logic evidence/control.vec cpu/control-logic.circ 2>&1 | tee evidence/control-vector.log
 timeout 600 python3 tools/run_test.py tests/integration-*/ 2>&1 | tee evidence/integration.log
 python3 - <<'PY'
 from pathlib import Path
