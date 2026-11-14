@@ -620,66 +620,6 @@
     </comp>
     <wire from="(2600,1820)" to="(2620,1820)" />
     <comp name="control_logic" loc="(3200,1800)" lib="9" />
-    <comp name="Tunnel" loc="(3000,1800)" lib="0">
-      <a name="label" val="Instruction" />
-      <a name="width" val="32" />
-    </comp>
-    <wire from="(2980,1800)" to="(3000,1800)" />
-    <comp name="Tunnel" loc="(3000,1820)" lib="0">
-      <a name="label" val="BrEq" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(2980,1820)" to="(3000,1820)" />
-    <comp name="Tunnel" loc="(3000,1840)" lib="0">
-      <a name="label" val="BrLt" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(2980,1840)" to="(3000,1840)" />
-    <comp name="Tunnel" loc="(3220,1800)" lib="0">
-      <a name="label" val="PCSel" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1800)" to="(3220,1800)" />
-    <comp name="Tunnel" loc="(3220,1820)" lib="0">
-      <a name="label" val="RegWEn" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1820)" to="(3220,1820)" />
-    <comp name="Tunnel" loc="(3220,1840)" lib="0">
-      <a name="label" val="ImmSel" />
-      <a name="width" val="3" />
-    </comp>
-    <wire from="(3200,1840)" to="(3220,1840)" />
-    <comp name="Tunnel" loc="(3220,1860)" lib="0">
-      <a name="label" val="BrUn" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1860)" to="(3220,1860)" />
-    <comp name="Tunnel" loc="(3220,1880)" lib="0">
-      <a name="label" val="ASel" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1880)" to="(3220,1880)" />
-    <comp name="Tunnel" loc="(3220,1900)" lib="0">
-      <a name="label" val="BSel" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1900)" to="(3220,1900)" />
-    <comp name="Tunnel" loc="(3220,1920)" lib="0">
-      <a name="label" val="ALUSel" />
-      <a name="width" val="4" />
-    </comp>
-    <wire from="(3200,1920)" to="(3220,1920)" />
-    <comp name="Tunnel" loc="(3220,1940)" lib="0">
-      <a name="label" val="MemRW" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(3200,1940)" to="(3220,1940)" />
-    <comp name="Tunnel" loc="(3220,1960)" lib="0">
-      <a name="label" val="WBSel" />
-      <a name="width" val="2" />
-    </comp>
-    <wire from="(3200,1960)" to="(3220,1960)" />
     <comp name="Multiplexer" loc="(2900,1000)" lib="2">
       <a name="select" val="1" />
       <a name="width" val="32" />
@@ -926,5 +866,65 @@
       <a name="width" val="1" />
     </comp>
     <wire from="(990,1020)" to="(990,1060)" />
+    <comp lib="0" name="Tunnel" loc="(3220,1800)">
+      <a name="label" val="PCSel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3200,1800)" to="(3220,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3270,1800)">
+      <a name="label" val="RegWEn" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3250,1800)" to="(3270,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3320,1800)">
+      <a name="label" val="ImmSel" />
+      <a name="width" val="3" />
+    </comp>
+    <wire from="(3300,1800)" to="(3320,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3470,1800)">
+      <a name="label" val="BrUn" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3450,1800)" to="(3470,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3520,1800)">
+      <a name="label" val="ASel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3500,1800)" to="(3520,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3570,1800)">
+      <a name="label" val="BSel" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3550,1800)" to="(3570,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3620,1800)">
+      <a name="label" val="ALUSel" />
+      <a name="width" val="4" />
+    </comp>
+    <wire from="(3600,1800)" to="(3620,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3670,1800)">
+      <a name="label" val="MemRW" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3650,1800)" to="(3670,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3720,1800)">
+      <a name="label" val="WBSel" />
+      <a name="width" val="2" />
+    </comp>
+    <wire from="(3700,1800)" to="(3720,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3140,1800)">
+      <a name="label" val="Instruction" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(3120,1800)" to="(3140,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3370,1800)">
+      <a name="label" val="BrEq" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3350,1800)" to="(3370,1800)" />
+    <comp lib="0" name="Tunnel" loc="(3420,1800)">
+      <a name="label" val="BrLt" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(3400,1800)" to="(3420,1800)" />
   </circuit>
 </project>
