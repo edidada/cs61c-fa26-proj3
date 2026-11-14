@@ -1672,7 +1672,7 @@
     </comp>
     <wire from="(2120,1280)" to="(2160,1280)" />
     <comp name="Tunnel" loc="(1600,1500)" lib="0">
-      <a name="label" val="i14" />
+      <a name="label" val="i13" />
       <a name="width" val="1" />
     </comp>
     <comp name="Tunnel" loc="(1650,1500)" lib="0">
