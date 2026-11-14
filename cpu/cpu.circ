@@ -317,31 +317,6 @@
       <a name="label" val="PC" />
       <a name="trigger" val="rising" />
     </comp>
-    <comp name="Tunnel" loc="(970,1060)" lib="0">
-      <a name="label" val="next_pc" />
-      <a name="width" val="32" />
-    </comp>
-    <wire from="(970,1000)" to="(970,1060)" />
-    <comp name="Tunnel" loc="(970,1070)" lib="0">
-      <a name="label" val="one" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(970,1010)" to="(970,1070)" />
-    <comp name="Tunnel" loc="(980,1080)" lib="0">
-      <a name="label" val="clk" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(980,1020)" to="(980,1080)" />
-    <comp name="Tunnel" loc="(990,1080)" lib="0">
-      <a name="label" val="bitzero" />
-      <a name="width" val="1" />
-    </comp>
-    <wire from="(990,1020)" to="(990,1080)" />
-    <comp name="Tunnel" loc="(1000,1060)" lib="0">
-      <a name="label" val="pc" />
-      <a name="width" val="32" />
-    </comp>
-    <wire from="(1000,1000)" to="(1000,1060)" />
     <comp name="Tunnel" loc="(900,850)" lib="0">
       <a name="label" val="pc" />
       <a name="width" val="32" />
@@ -926,5 +901,30 @@
       <a name="width" val="32" />
     </comp>
     <wire from="(4200,2200)" to="(4230,2200)" />
+    <comp lib="0" name="Tunnel" loc="(940,1000)">
+      <a name="label" val="next_pc" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(970,1000)" to="(940,1000)" />
+    <comp lib="0" name="Tunnel" loc="(940,1010)">
+      <a name="label" val="one" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(970,1010)" to="(940,1010)" />
+    <comp lib="0" name="Tunnel" loc="(1040,1000)">
+      <a name="label" val="pc" />
+      <a name="width" val="32" />
+    </comp>
+    <wire from="(1000,1000)" to="(1040,1000)" />
+    <comp lib="0" name="Tunnel" loc="(980,1060)">
+      <a name="label" val="clk" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(980,1020)" to="(980,1060)" />
+    <comp lib="0" name="Tunnel" loc="(990,1060)">
+      <a name="label" val="bitzero" />
+      <a name="width" val="1" />
+    </comp>
+    <wire from="(990,1020)" to="(990,1060)" />
   </circuit>
 </project>

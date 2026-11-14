@@ -48,3 +48,10 @@ import re
 text=Path('evidence/partial_store.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('4','4')],text
 PY
+timeout 600 python3 tools/run_test.py tests/integration-*/ 2>&1 | tee evidence/integration.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/integration.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('15','15')],text
+PY
