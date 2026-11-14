@@ -76,3 +76,18 @@ import re
 text=Path('evidence/custom.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('1','1')],text
 PY
+python3 - <<'PY'
+from pathlib import Path
+import csv,json
+folder=Path('tests/integration-custom/out')
+actual=list(csv.reader((folder/'isa-boundaries.out').open()))
+reference=list(csv.reader((folder/'isa-boundaries.piperef').open()))
+assert actual[:len(reference)]==reference,'Raw trace differs from Venus'
+assert len(actual)==len(reference)+1,(len(actual),len(reference))
+last=[int(x,2) for x in actual[-2]]
+tail=[int(x,2) for x in actual[-1]]
+assert tail[:8]==last[:8] and tail[8]==last[8]+4 and tail[9]==0 and tail[10]==last[10]+1,(last,tail)
+result={'reference_cycles':len(reference)-1,'actual_cycles':len(actual)-1,'exact_reference_prefix':True,'extra_halt_row':'registers unchanged, PC+4, instruction0, step+1'}
+Path('evidence/raw-trace.json').write_text(json.dumps(result,indent=2)+'\n')
+print(result)
+PY
