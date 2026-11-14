@@ -27,3 +27,10 @@ import re
 text=Path('evidence/alu.log').read_text()
 assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('6','6')],text
 PY
+timeout 300 bash test.sh test_regfile 2>&1 | tee evidence/regfile.log
+python3 - <<'PY'
+from pathlib import Path
+import re
+text=Path('evidence/regfile.log').read_text()
+assert re.findall(r'Passed (\d+)/(\d+) tests',text)==[('4','4')],text
+PY
